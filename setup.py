@@ -18,15 +18,13 @@ class PyTest(Command):
 
 setup(
     name='Flask-Storage-Helpers',
-    version='0.1.4',
+    version='0.1.5',
     url='http://github.com/achauve/flask-storage-helpers',
     license='MIT',
     author='Konsta Vesterinen',
     author_email='konsta.vesterinen@gmail.com',
     description='Various file storage backends for Flask apps.',
-    long_description=
-        open('README.rst').read() + '\n\n' +
-        open('CHANGES.rst').read(),
+    long_description= open('README.rst').read(),
     packages=['flask_storage_helpers'],
     include_package_data=True,
     zip_safe=False,
