@@ -5,12 +5,12 @@ from pytest import raises
 from flexmock import flexmock
 
 from tests import TestCase
-from flask_storage import (
+from flask_storage_helpers import (
     FileSystemStorage,
     FileSystemStorageFile,
     StorageException
 )
-import flask_storage.filesystem
+import flask_storage_helpers.filesystem
 
 
 class FileSystemTestCase(TestCase):
@@ -46,7 +46,7 @@ class TestFileSystemDefaults(FileSystemTestCase):
         self.app.config['FILE_SYSTEM_STORAGE_FILE_VIEW'] = 'custom.file_view'
         storage = FileSystemStorage()
         called_url_for = (
-            flexmock(flask_storage.filesystem)
+            flexmock(flask_storage_helpers.filesystem)
             .should_receive('url_for')
             .once()
             .with_args('custom.file_view', filename='file_name')

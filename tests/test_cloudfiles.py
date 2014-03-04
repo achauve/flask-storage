@@ -4,7 +4,7 @@ from pytest import raises
 from flexmock import flexmock
 import cloudfiles
 from tests import TestCase
-from flask_storage import (
+from flask_storage_helpers import (
     CloudFilesStorage,
     CloudFilesStorageFile,
     StorageException

@@ -17,9 +17,9 @@ class PyTest(Command):
 
 
 setup(
-    name='Flask-Storage',
-    version='0.1.3',
-    url='http://github.com/kvesteri/flask-storage',
+    name='Flask-Storage-Helpers',
+    version='0.1.4',
+    url='http://github.com/achauve/flask-storage-helpers',
     license='MIT',
     author='Konsta Vesterinen',
     author_email='konsta.vesterinen@gmail.com',
@@ -27,7 +27,7 @@ setup(
     long_description=
         open('README.rst').read() + '\n\n' +
         open('CHANGES.rst').read(),
-    packages=['flask_storage'],
+    packages=['flask_storage_helpers'],
     include_package_data=True,
     zip_safe=False,
     platforms='any',

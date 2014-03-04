@@ -3,7 +3,7 @@ from StringIO import StringIO
 from pytest import raises
 
 from tests import TestCase
-from flask_storage import (
+from flask_storage_helpers import (
     MockStorage, MockStorageFile, StorageException, FileNotFoundError
 )
 

@@ -7,7 +7,7 @@ from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 from boto.s3.bucket import Bucket
 from tests import TestCase
-from flask_storage import S3BotoStorage, S3BotoStorageFile, FileNotFoundError
+from flask_storage_helpers import S3BotoStorage, S3BotoStorageFile, FileNotFoundError
 
 
 class MockKey(object):
